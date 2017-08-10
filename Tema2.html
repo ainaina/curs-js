@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/javascript">
+        function showMessage(message)
+        {
+            document.getElementById("container").innerHTML = document.getElementById("container").innerHTML + "<br>" + message;
+        }
+
+        var phrase = 'Aliquam at convallis enim nec convallis purus';
+
+        showMessage(phrase);
+        showMessage('Numar de caractere: ' + phrase.length);
+
+        var phraseWithoutSpaces = phrase.replace(/ /g, '');
+        showMessage('numarul de caractere diferite de spatiu: ' + phraseWithoutSpaces.length);
+
+        var firstSpace = phrase.indexOf(' ');
+        var firstWord = phrase.substring(0, firstSpace);
+        showMessage('Primul Cuvant: ' + firstWord.toUpperCase());
+
+        showMessage('Text nou: ' + phrase.replace(firstWord, 'word'));
+        var textNou = phrase.replace(firstWord, 'word');
+        showMessage('Text nou: ' + textNou);
+
+        var lastSpace = phrase.lastIndexOf(' ');
+        var lastWord = phrase.substring(lastSpace);
+        showMessage('Ultimul cuvant:' + lastWord);
+
+        var secondSpace = phrase.indexOf(' ', firstSpace + 1);
+        showMessage('Al doilea cuvant: ' + phrase.substring(firstSpace, secondSpace));
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
