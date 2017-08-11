@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Document</title>
+    <style>
+        #container{
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'></div>
+    <script>
+        function show(message)
+        {
+            document.getElementById('container').innerHTML =
+            document.getElementById('container').innerHTML + '<br>' + message;
+        }
+        if (2 == '1') {
+            show("1 este egal cu '1'");
+        } else {
+            show('alt mesaj');
+        }
+
+        var firstNumber = 13;
+        var secondNumber = 5;
+        if (firstNumber > secondNumber) {
+            show(firstNumber);
+        } else {
+            show(secondNumber);
+        }
+        var firstName = 'Alina';
+        var secondName = 'Ruxandra';
+        if (firstName > secondName) {
+            show(firstName);
+            show(secondName);
+        } else {
+            show(secondName);
+            show(firstName);
+        }
+
+        var number = 7;
+        if (number == 0) {
+            show('este zero');
+        } else if (number % 2 == 0) {
+            show('este par');
+        } else {
+            show('este impar');
+        }
+
+        var number = 2;
+        for (number = 1; number <= 5; number++) {
+            show(number);
+        }
+
+        var text = 'Lorem ipsum';
+        // show(text[0]);
+        // show(text[1]);
+        // show(text[2]);
+        // show(text[3]);
+        // show(text[4]);
+        var textLength = text.length;
+        for (var i = 0; i < textLength; i++) {
+            show('caracterul de pe pozitia ' + (i + 1) + ' este: ' + text[i]);
+        }
+        show('------');
+        for (var i = textLength - 1; i >= 0; i--) {
+            show('caracterul de pe pozitia ' + (i + 1) + ' este: ' + text[i]);
+        }
+        var number = prompt ('Introdu un nr de la 0  la 10');
+        show(number);
+
+
+
+
+    </script>
+</body>
+</html>
