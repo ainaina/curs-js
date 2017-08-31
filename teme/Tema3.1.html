@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var phrase = 'Ana stie povesti';
+        var phraseLength = phrase.length;
+
+        var nrVocale = 0;
+        var nrConsoane = 0;
+
+        for (var i = 0; i < phraseLength; i++) {
+            if (phrase[i].toLowerCase() == 'a' || phrase[i].toLowerCase() == 'e' || phrase[i].toLowerCase() == 'i' || phrase[i].toLowerCase() == 'o' || phrase[i].toLowerCase() == 'u') {
+                nrVocale = nrVocale + 1;
+            } else if (phrase[i] != ' ') {
+                nrConsoane = nrConsoane + 1;
+            }
+        }
+
+        console.log(nrVocale);
+        console.log(nrConsoane);
+        console.log('Fraza are ' + nrVocale + ' vocale si ' + nrConsoane + ' consoane.');
+    </script>
+    
+</body>
+</html>

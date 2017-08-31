@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var text = '1100111';
+		var textLength = text.length;
+
+		var cifraUnu = 0;
+		var cifraZero = 0;
+
+		console.log(text);
+
+		for (var i = 0; i < textLength; i++) {
+			if (text[i] == '1') {
+				cifraUnu = cifraUnu + 1;
+			} else {
+				cifraZero = cifraZero + 1;
+			}
+		}
+		console.log(cifraUnu + ' cifre de 1');
+		console.log(cifraZero + ' cifre de 0');
+	</script>
+
+</body>
+</html>
